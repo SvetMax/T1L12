@@ -13,17 +13,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        font-family: "Roboto", sans-serif;
-        font-size: 18px;
-        margin: 32px;
-      }
+     html {
+         font-family: "Roboto", sans-serif;
+         font-size: 18px;
+     }
+      
       section {
-          display: block;
+          
+          margin: 32px;
+        
       }
       h1 {
         word-spacing: 20px;
@@ -32,10 +30,10 @@
       }
       p {
         line-height: 28px;
-        margin: 0;
+        flex-grow: 1;
       }
-      span {
-        font-weight: bold;
+      .technology {
+        font-weight: 900;
         letter-spacing: 3px;
         font-size: 24px;
         opacity: 80%;
@@ -44,7 +42,7 @@
       a {
         text-decoration: none;
       }
-      em {
+      .translation {
         font-style: italic;
         color: gray;
       }
@@ -55,7 +53,7 @@
     <section>
       <h1>Web technologies</h1>
       <p>
-        <span>HTML</span>(от англ.<em>HyperText Markup Language</em> — «язык
+        <b class="technology">HTML</b>(от англ.<em class="translation">HyperText Markup Language</em> — «язык
         гипертекстовой разметки») — стандартизированный язык разметки документов
         во Всемирной паутине. Большинство веб-страниц содержат описание разметки
         на языке HTML (или XHTML). Язык
@@ -65,7 +63,7 @@
         мобильного устройства.
       </p>
       <p>
-        <span>CSS</span> (/siːɛsɛs/ англ.<em>Cascading Style Sheets</em> —
+        <b class="technology">CSS</b> (/siːɛsɛs/ англ.<em class="translation">Cascading Style Sheets</em> —
         каскадные таблицы стилей) — формальный язык описания внешнего вида
         документа, написанного с использованием языка разметки.
       </p>
